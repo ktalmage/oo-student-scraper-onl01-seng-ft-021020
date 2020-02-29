@@ -25,6 +25,7 @@ class Scraper
   
   
     end
+    student_hash
   end
 
   
