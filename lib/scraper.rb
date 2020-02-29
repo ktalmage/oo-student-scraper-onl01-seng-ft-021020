@@ -18,7 +18,7 @@ class Scraper
     student_hash =        {:name => name,
                            :location => location,
                            :profile_url => profile_url}
-    student_hash
+    #student_hash
     scraped_students << student_hash
     end
     scraped_students
