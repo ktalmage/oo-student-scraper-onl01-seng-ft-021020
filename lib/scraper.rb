@@ -22,11 +22,11 @@ class Scraper
     # :profile_url = student.css('div.view-profile-div').text
   }
   
-  
+  binding.pry
   
     end
-    student_hash
-    binding.pry
+    
+    
   end
 
   
