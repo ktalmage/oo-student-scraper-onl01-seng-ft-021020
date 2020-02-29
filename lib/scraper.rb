@@ -16,7 +16,7 @@ class Scraper
   scraped_students << doc
   scraped_students.each do |student|
   
-  student_hash[student_hash.to_sym] = {
+  student_hash.to_sym = {
      :name => student.css("h4.student-name").text,
     :location => student.css("p.student-location").text
     # :profile_url = student.css('div.view-profile-div').text
