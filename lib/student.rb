@@ -1,3 +1,4 @@
+require 'pry'
 class Student
 
   attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url 
@@ -5,13 +6,11 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    #@name = student_hash[:name]
     self.send("name=", student_hash[:name])
-    #@location = student_hash[:location]
     self.send("location=", student_hash[:location])
-    #@profile_url = student_hash[:profile_url]
     self.send("profile_url=", student_hash[:profile_url])
     @@all << self
+    binding.pry
   end
 
   def self.create_from_collection(students_array)
@@ -29,7 +28,7 @@ class Student
   end
 
   def self.all
-    
+     @@all
   end
 end
 
