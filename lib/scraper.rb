@@ -21,7 +21,7 @@ class Scraper
     scraped_students << student_hash
     end
     scraped_students
-    binding.pry
+   
   end
 
   
