@@ -18,8 +18,8 @@ class Scraper
   
   student_hash = {
      :name => student.css("h4.student-name").text,
-    :location => student.css("p.student-location").text
-    # :profile_url = student.css('div.view-profile-div').text
+     :location => student.css("p.student-location").text
+     :profile_url = student.css('div.view-profile-div').text
   }
   
   binding.pry
