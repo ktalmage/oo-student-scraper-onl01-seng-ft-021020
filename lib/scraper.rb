@@ -12,7 +12,7 @@ class Scraper
   index_url= open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
   doc = Nokogiri::HTML(index_url)
   
-  binding.pry
+  
   scraped_students << doc
   scraped_students.each do |student|
   
@@ -26,6 +26,7 @@ class Scraper
   
     end
     student_hash
+    binding.pry
   end
 
   
