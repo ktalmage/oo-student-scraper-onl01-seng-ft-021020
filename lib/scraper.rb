@@ -15,13 +15,12 @@ class Scraper
     name = student.css("h4.student-name").text,
     location = student.css("p.student-location").text,
     profile_url = student.css("a").attribute("href").value
-    student_hash = {:name => name,:location => location,:profile_url => profile_url}
+    student_hash = {:name => name,
+            :location => location,
+            :profile_url => profile_url}
     scraped_students << student_hash
-  
     end
-    
     scraped_students
-    
   end
 
   
